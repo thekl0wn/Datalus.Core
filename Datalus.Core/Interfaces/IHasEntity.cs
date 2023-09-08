@@ -1,6 +1,6 @@
 ﻿namespace Datalus.Core
 {
-    public interface IHasEntity
+    public interface IHasEntity : IRuntime
     {
         IEntity Entity { get; }
     }

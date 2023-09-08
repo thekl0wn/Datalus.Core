@@ -51,6 +51,7 @@
     <Compile Include="Components\ComponentChangedEventArgs.cs" />
     <Compile Include="Components\ComponentController.cs" />
     <Compile Include="Components\ComponentEventArgs.cs" />
+    <Compile Include="Components\ComponentExtensions.cs" />
     <Compile Include="Components\IComponent.cs" />
     <Compile Include="Components\IComponentSubscriber.cs" />
     <Compile Include="Controllers\DatabaseController.cs" />

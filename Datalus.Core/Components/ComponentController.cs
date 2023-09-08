@@ -42,6 +42,12 @@ namespace Datalus.Core.Components
             return id;
         }
 
+        internal static Component GetComponentFromRuntime(int runtime_id)
+        {
+            // return reference to the component
+            return default(T);
+        }
+
         /// <summary>
         /// Initialization of component data. GetComponent(x) calls this to ensure the controller is initialized.
         /// </summary>

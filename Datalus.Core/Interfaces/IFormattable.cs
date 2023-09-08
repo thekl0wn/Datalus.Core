@@ -1,6 +1,6 @@
 ﻿namespace Datalus.Core
 {
-    public interface IFormattable
+    public interface IFormattable : IRuntime
     {
         bool FormatData();
     }

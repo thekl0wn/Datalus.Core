@@ -46,6 +46,9 @@ namespace Datalus.Core
             // create new entity
             var entity = new Entity();
 
+            // let inherited classes do their thing
+            OnEntityCreated(entity);
+
             // register
             Register(entity);
 
@@ -72,6 +75,12 @@ namespace Datalus.Core
             // return entity
             return entity;
         }
+
+        /// <summary>
+        /// Called when an entity is created. Override this to assign components in the inherited classes.
+        /// </summary>
+        /// <param name="entity">the freshly instantiated entity</param>
+        public virtual void OnEntityCreated(IEntity entity) { }
 
         /// <summary>
         /// Internally registers the entity to the manager.

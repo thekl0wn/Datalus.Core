@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Datalus.Core
 {
-    public interface IEntity : IModifiable, IRuntime, ISavable
+    public interface IEntity : IDisposable, IModifiable, IRuntime, ISavable
     {
         IReadOnlyList<IComponent> Components { get; }
         int EntityID { get; }

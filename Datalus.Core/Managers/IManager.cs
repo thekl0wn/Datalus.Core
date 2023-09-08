@@ -9,5 +9,6 @@ namespace Datalus.Core
 
         IEntity Create();
         IEntity Get(int id);
+        void OnEntityCreated(IEntity entity);
     }
 }

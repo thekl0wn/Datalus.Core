@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Datalus.Core
 {
-    public sealed class Entity : IDisposable, IEntity
+    public sealed class Entity : IEntity
     {
         /// <summary>
         /// Declared as internal. Only a manager can create an entity.
